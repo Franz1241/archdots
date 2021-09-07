@@ -17,7 +17,8 @@ yay -S nerd-fonts-ubuntu-mono lightdm-webkit-theme-aether
 Clonamos y copiamos las config de xmonad y xmobar del repo
 
 ```
-git clone
+cd ~
+git clone https://github.com/Franz1241/archdots.git
 cp -r ~/archdots/.config/xmonad ~/.config
 cp -r ~/archdots/.config/xmobar ~/.config
 ```
