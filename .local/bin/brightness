@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Si es que salen números que no deberían (Distintos 0% a 100%) entonces cambia la fórmula abajo
+
+(( br = $(brightnessctl get) *100/21333 ))
+
+ echo -n "$(percentage $br        ) $br% "
