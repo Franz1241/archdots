@@ -115,7 +115,10 @@ xmobarEscape = concatMap doubleLts
 myWorkspaces :: [String]
 myWorkspaces = clickable . (map xmobarEscape)
 --                                                                                            
-    $ ["\xf269 ", "\xe61f ", "\xe795 ", "\xf121 ", "\xf419 ", "\xf308 ", "\xf74a ", "\xf7e8 ", "\xf827 "]
+    -- $ ["\xf269 ", "\xe61f ", "\xe795 ", "\xf121 ", "\xf419 ", "\xf308 ", "\xf74a ", "\xf7e8 ", "\xf827 "]
+--                                                                                        
+    $ ["\xf121 ", "\xe795 ", "\xf269 ", "\xf419 ", "\xe61f ", "\xf308 ", "\xf74a ", "\xf7e8 ", "\xf827 "]
+
 --  $ ["www", "dev", "term", "ref", "git", "dock", "fs", "media", "misc"]
   where
     clickable l = ["<action=xdotool key super+" ++ show (i) ++ "> " ++ ws ++ "</action>" | (i, ws) <- zip [1 .. 9] l]
@@ -180,12 +183,10 @@ myKeys =
     ("M-S-m", spawn "rofi -show"),
     -- Browser
     ("M-b", spawn "firefox"),
-    -- File explorer
-    ("M-e", spawn "pcmanfm"),
     -- Terminal
     ("M-<Return>", spawn myTerminal),
     -- Redshift
-    ("M-r", spawn "redshift -O 2400"),
+    ("M-r", spawn "redshift -O 2500"),
     ("M-S-r", spawn "redshift -x"),
     -- Scrot
     ("M-s", spawn "scrot"),

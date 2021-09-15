@@ -20,7 +20,7 @@ Config {
     ],
     sepChar = "%",
     alignSep = "}{",
-    template = "<fc=#b303ff>   </fc> %UnsafeStdinReader% }{ \
+    template = "<fc=#b303ff>  </fc> %UnsafeStdinReader% }{ \
         \<fc=#e1acff> %updates% </fc>\
         \<fc=#FFB86C> %cpu% </fc>\
         \<fc=#FF5555> %memory% </fc>\
