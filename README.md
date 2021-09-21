@@ -1,7 +1,4 @@
-# Archdots
-
-Para conectar una red wifi con el network manager usamos los siguientes comandos
-```
+# Archdots Para conectar una red wifi con el network manager usamos los siguientes comandos ```
 # List all available networks
 nmcli device wifi list
 # Connect to your network
@@ -10,7 +7,7 @@ nmcli device wifi connect YOUR_SSID password YOUR_PASSWORD
 
 Primero instalamos todo esto con el pacman
 ```
-sudo pacman -S lightdm lightdm-webkit2-greeter firefox xmonad xmonad-contrib xmobar trayer xdotool xorg git base-devel pacman-contrib brightnessctl pamixer upower xorg-xinit thunar feh alacritty neofetch rofi which scrot redshift
+sudo pacman -S lightdm lightdm-webkit2-greeter firefox xmonad xmonad-contrib xmobar trayer xdotool xorg git base-devel pacman-contrib brightnessctl pamixer upower xorg-xinit thunar feh alacritty neofetch rofi which scrot redshift pulseaudio
 
 ```
 Ahora instalaremos el AUR package manager para mejor personalización
