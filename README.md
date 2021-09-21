@@ -6,6 +6,18 @@ nmcli device wifi list
 # Connect to your network
 nmcli device wifi connect YOUR_SSID password YOUR_PASSWORD
 ```
+Para crear nuevo usuario no root y poder ponerlo en los grupos clásicos serían los siguientes comandos. También recordar de cambiar el visudo para dar privilegios de root a los usuarios wheel.
+
+```
+useradd -m username
+passwd username
+usermod -aG wheel,video,audio,storage username
+
+
+
+visudo
+#descomentamos la linea /wheel
+```
 
 Primero instalamos todo esto con el pacman
 ```
@@ -75,3 +87,16 @@ rofi-theme-selector
 ``` 
 
 Arreglamos algún bug que haya y listo, ya debería estar.
+
+
+##Nvim
+
+Para esto deberíamos tener el vim y neovim instalados con el pacman
+Copiamos la carpeta nvim del archdots repo y hacemos lo siguiente
+
+```
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+nvim
+:PlugInstall
+```
+Y luego seguimos la guía de lsp-config con la instalación del npm y los servers de python html y typescript
