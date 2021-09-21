@@ -1,5 +1,7 @@
-# Archdots Para conectar una red wifi con el network manager usamos los siguientes comandos ```
-# List all available networks
+# Archdots
+Para conectar una red wifi con el network manager usamos los siguientes comandos 
+```
+List all available networks
 nmcli device wifi list
 # Connect to your network
 nmcli device wifi connect YOUR_SSID password YOUR_PASSWORD
