@@ -9,7 +9,7 @@ Config {
     allDesktops = True,
     persistent = True,
     commands = [ 
-        Run Date "  %d %b %Y %H:%M " "date" 600,
+        Run Date "  %a %d %b %Y %H:%M " "date" 600,
         Run Com "volume" [] "volume" 10,
         Run Com "battery" [] "battery" 600,
         Run Com "brightness" [] "brightness" 10,
