@@ -12,9 +12,9 @@ Config {
         Run Date "  %a %d %b %Y %H:%M " "date" 600,
         Run Network "wlp3s0" ["-t", " <rx>kb  <tx>kb"] 150,
         Run Cpu ["-t", " (<total>%)","-H","50","--high","red"] 150,
-        Run Memory ["-t", "  <used>M (<usedratio>%)"] 150,
+        Run Memory ["-t", "  <used>M (<usedratio>%)"] 150,
         Run Com "volume" [] "volume" 10,
-        Run Com "bash" ["-c", "cat /sys/class/thermal/thermal_zone0/temp | cut -c1-2"] "cpu-temp" 150,
+        Run Com "bash" ["-c", "cat /sys/class/thermal/thermal_zone0/temp | cut -c1-2"] "cpu-temp" 10,
         Run Com "battery" [] "battery" 600,
         Run UnsafeStdinReader
     ],
