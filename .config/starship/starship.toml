@@ -1,5 +1,5 @@
-[line_break]
-disabled=true
+# [line_break]
+# disabled=true
 format = "$all"
 
 # Replace the "❯" symbol in the prompt with "➜"
