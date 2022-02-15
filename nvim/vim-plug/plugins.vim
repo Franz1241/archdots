@@ -1,11 +1,3 @@
-:set number
-:set relativenumber
-:set autoindent
-:set mouse=a 
-
-
-
-
 call plug#begin('~/.config/nvim/autoload/plugged')
 
     Plug 'sheerun/vim-polyglot' " Better Syntax Support
@@ -33,4 +25,4 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 
-:colorscheme focuspoint 
+:colorscheme molokai

@@ -5,3 +5,11 @@ source $HOME/.config/nvim/lua/compe-config.lua
 source $HOME/.config/nvim/lua/lsp/python-ls.lua
 source $HOME/.config/nvim/lua/lsp/typescript-ls.lua
 source $HOME/.config/nvim/lua/lsp/html-ls.lua
+
+
+:set number
+:set relativenumber
+:set autoindent
+:set mouse=a 
+:set clipboard+=unnamedplus
+
