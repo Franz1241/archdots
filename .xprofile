@@ -1,4 +1,4 @@
 export PATH=$HOME/.local/bin:$PATH
-xrandr --output eDP-1 --primary --right-of HDMI-1 --mode 1280x720 --pos 0x1080 --output HDMI-1 --mode 2560x1080 --pos 0x0 &
+xrandr --output eDP-1 --primary --mode 1280x720 --pos 0x1080 &
 setxkbmap latam&
 feh --no-fehbg --bg-scale '/home/franz1241/Pictures/wallpaper.jpg'&
