@@ -191,7 +191,6 @@ myKeys =
     -- Scrot
     ("M-s", spawn "scrot"),
     ("M-S-s", spawn "scrot -s"),
-
     --------------------- Hardware ---------------------
 
     -- Volume
