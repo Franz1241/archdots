@@ -1,0 +1,331 @@
+$ ghc --make xmonad.hs -i -ilib -fforce-recomp -main-is main -dynamic -v0 -outputdir /home/franz1241/.xmonad/build-x86_64-linux -o /home/franz1241/.xmonad/xmonad-x86_64-linux
+
+xmonad.hs:6:1: error:
+    Could not load module ‘XMonad’
+    It is a member of the package ‘xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL data-default-class-0.1.2.0-IxhEAzgy8931aXcEiJcyZO setlocale-1.0.0.10-74RvlEaOUOOC5hdLE0ThDH
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+6 | import XMonad
+  | ^^^^^^^^^^^^^
+
+xmonad.hs:7:1: error:
+    Could not load module ‘XMonad.Actions.CopyWindow’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+7 | import XMonad.Actions.CopyWindow (kill1)
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:8:1: error:
+    Could not load module ‘XMonad.Actions.CycleWS’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+8 | import XMonad.Actions.CycleWS (nextScreen, prevScreen)
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:9:1: error:
+    Could not load module ‘XMonad.Actions.MouseResize’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+  |
+9 | import XMonad.Actions.MouseResize
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:10:1: error:
+    Could not load module ‘XMonad.Actions.WithAll’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+10 | import XMonad.Actions.WithAll (sinkAll)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:11:1: error:
+    Could not load module ‘XMonad.Actions.UpdatePointer’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+11 | import XMonad.Actions.UpdatePointer
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:14:1: error:
+    Could not load module ‘XMonad.Hooks.DynamicLog’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+14 | import XMonad.Hooks.DynamicLog (PP (..), dynamicLogWithPP, shorten, wrap, xmobarColor, xmobarPP)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:15:1: error:
+    Could not load module ‘XMonad.Hooks.EwmhDesktops’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+15 | import XMonad.Hooks.EwmhDesktops
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:16:1: error:
+    Could not load module ‘XMonad.Hooks.FadeInactive’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+16 | import XMonad.Hooks.FadeInactive
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:17:1: error:
+    Could not load module ‘XMonad.Hooks.ManageDocks’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+17 | import XMonad.Hooks.ManageDocks (ToggleStruts (..), avoidStruts, docksEventHook, manageDocks)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:18:1: error:
+    Could not load module ‘XMonad.Hooks.ManageHelpers’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+18 | import XMonad.Hooks.ManageHelpers (doFullFloat, isFullscreen)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:19:1: error:
+    Could not load module ‘XMonad.Hooks.SetWMName’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+19 | import XMonad.Hooks.SetWMName
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:20:1: error:
+    Could not load module ‘XMonad.Hooks.WorkspaceHistory’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+20 | import XMonad.Hooks.WorkspaceHistory
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:21:1: error:
+    Could not load module ‘XMonad.Hooks.InsertPosition’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+21 | import XMonad.Hooks.InsertPosition
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:24:1: error:
+    Could not load module ‘XMonad.Layout.GridVariants’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+24 | import XMonad.Layout.GridVariants (Grid (Grid))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:25:1: error:
+    Could not load module ‘XMonad.Layout.LayoutModifier’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+25 | import XMonad.Layout.LayoutModifier
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:26:1: error:
+    Could not load module ‘XMonad.Layout.LimitWindows’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+26 | import XMonad.Layout.LimitWindows (limitWindows)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:27:1: error:
+    Could not load module ‘XMonad.Layout.MultiToggle’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+27 | import XMonad.Layout.MultiToggle ((??), EOT (EOT), mkToggle, single)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:28:1: error:
+    Could not load module ‘XMonad.Layout.MultiToggle’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+28 | import qualified XMonad.Layout.MultiToggle as MT (Toggle (..))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:29:1: error:
+    Could not load module ‘XMonad.Layout.MultiToggle.Instances’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+29 | import XMonad.Layout.MultiToggle.Instances (StdTransformers (MIRROR, NBFULL, NOBORDERS))
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:30:1: error:
+    Could not load module ‘XMonad.Layout.NoBorders’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+30 | import XMonad.Layout.NoBorders
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:31:1: error:
+    Could not load module ‘XMonad.Layout.Renamed’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+31 | import XMonad.Layout.Renamed (Rename (Replace), renamed)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:32:1: error:
+    Could not load module ‘XMonad.Layout.ResizableTile’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+32 | import XMonad.Layout.ResizableTile
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:33:1: error:
+    Could not load module ‘XMonad.Layout.ShowWName’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+33 | import XMonad.Layout.ShowWName
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:34:1: error:
+    Could not load module ‘XMonad.Layout.SimplestFloat’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+34 | import XMonad.Layout.SimplestFloat
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:35:1: error:
+    Could not load module ‘XMonad.Layout.Spacing’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+35 | import XMonad.Layout.Spacing
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:36:1: error:
+    Could not load module ‘XMonad.Layout.ThreeColumns’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+36 | import XMonad.Layout.ThreeColumns
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:37:1: error:
+    Could not load module ‘XMonad.Layout.ToggleLayouts’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+37 | import qualified XMonad.Layout.ToggleLayouts as T (ToggleLayout (Toggle), toggleLayouts)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:38:1: error:
+    Could not load module ‘XMonad.Layout.WindowArranger’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+38 | import XMonad.Layout.WindowArranger (WindowArrangerMsg (..), windowArrange)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:39:1: error:
+    Could not load module ‘XMonad.StackSet’
+    It is a member of the package ‘xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL data-default-class-0.1.2.0-IxhEAzgy8931aXcEiJcyZO setlocale-1.0.0.10-74RvlEaOUOOC5hdLE0ThDH
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+39 | import qualified XMonad.StackSet as W
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:42:1: error:
+    Could not load module ‘XMonad.Util.EZConfig’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+42 | import XMonad.Util.EZConfig (additionalKeysP)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:43:1: error:
+    Could not load module ‘XMonad.Util.Run’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+43 | import XMonad.Util.Run (spawnPipe)
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+xmonad.hs:44:1: error:
+    Could not load module ‘XMonad.Util.SpawnOnce’
+    It is a member of the package ‘xmonad-contrib-0.17.1-Kah3oaoLMwjHKMGULqAZvP’
+    which is unusable due to missing dependencies:
+      X11-1.10.3-7zBAfsIL85sJKAyVO3fFRL X11-xft-0.3.4-HIkAuJDyZeuGzIOhjI0zX7 xmonad-0.17.1-AYliKoHPJrfEE2a09z7Nv
+    Use -v (or `:set -v` in ghci) to see a list of the files searched for.
+   |
+44 | import XMonad.Util.SpawnOnce
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
