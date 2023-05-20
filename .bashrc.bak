@@ -1,0 +1,45 @@
+#
+# ~/.bashrc
+#
+
+# Activar vi keybindings
+set -o vi
+
+# Aliases para la exploración
+alias ls='ls --color=auto'
+alias l='ls -alh --color=auto'
+alias ll='ls -l --color=auto'
+alias la='ls -a --color=auto'
+
+#Aliases varios
+alias nv='nvim'
+alias c='code'
+
+alias vpsvultr='ssh franzvultr@207.148.25.208'
+alias mailvps='ssh contact@207.148.25.208'
+alias rpi='ssh pi@192.168.100.96'
+alias opsv0='ssh root@108.61.158.47'
+alias hackaton='ssh -i  ~/.ssh/hackaton-26.pem ec2-user@54.165.205.111'
+
+# Aliases para las funciones de upgrade de paquetes
+alias upp='sudo apt update && sudo apt upgrade'
+
+# Alias para activar el entorno virtual de python
+alias ave='source ./venv/bin/activate'
+alias dve='deactivate'
+
+alias getfile='echo "scp pi@192.168.100.96:/home/pi/zen_chats_2023-05-17.csv /home/franz1241/"'
+
+
+# Esto se ejecuta cada que abrimos una terminal
+neofetch | lolcat
+eval "$(starship init bash)"
+PS1='[\u@\h \W]\$ '
+
+export BROWSER='/mnt/c/Program Files/Google/Chrome/Application/chrome.exe'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f "/home/franz1241/.ghcup/env" ] && source "/home/franz1241/.ghcup/env" # ghcup-env
