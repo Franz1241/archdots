@@ -1,0 +1,15 @@
+XMonad will use ghc to recompile, because neither "/home/franz1241/.config/xmonad/build" nor "/home/franz1241/.config/xmonad/stack.yaml" exists.
+XMonad recompiling (forced).
+Errors detected while compiling xmonad config: /home/franz1241/.config/xmonad/xmonad.hs
+$ ghc --make xmonad.hs -i -ilib -fforce-recomp -main-is main -dynamic -v0 -outputdir /home/franz1241/.cache/xmonad/build-x86_64-linux -o /home/franz1241/.cache/xmonad/xmonad-x86_64-linux
+
+xmonad.hs:212:5: error:
+    Precedence parsing error
+        cannot mix ‘.’ [infixr 9] and ‘additionalKeysP’ [infixl 9] in the same infix expression
+    |
+212 |     xmonad $ ewmh . docks def `additionalKeysP` myKeys 
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...
+
+Please check the file for errors.
+
+xmonad: xmessage: executeFile: does not exist (No such file or directory)

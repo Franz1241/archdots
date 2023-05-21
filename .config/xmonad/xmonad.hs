@@ -14,7 +14,7 @@ import XMonad.Actions.UpdatePointer
 import XMonad.Hooks.DynamicLog (PP (..), dynamicLogWithPP, shorten, wrap, xmobarColor, xmobarPP)
 import XMonad.Hooks.EwmhDesktops
 import XMonad.Hooks.FadeInactive
-import XMonad.Hooks.ManageDocks (ToggleStruts (..), avoidStruts, docksEventHook, manageDocks)
+import XMonad.Hooks.ManageDocks (ToggleStruts (..), avoidStruts, docks, manageDocks)
 import XMonad.Hooks.ManageHelpers (doFullFloat, isFullscreen)
 import XMonad.Hooks.SetWMName
 import XMonad.Hooks.WorkspaceHistory
@@ -209,9 +209,10 @@ main = do
     xmobarLaptop <- spawnPipe "xmobar -x 0 ~/.config/xmobar/primary.hs"
     xmobarMonitor <- spawnPipe "xmobar -x 1 ~/.config/xmobar/secondary.hs"
     -- Xmonad
-    xmonad $ ewmh def {
+    xmonad $ ewmh . docks def `additionalKeysP` myKeys 
+        {
         manageHook = (isFullscreen --> doFullFloat) <+> manageDocks <+> insertPosition Below Newer,
-        handleEventHook = docksEventHook,
+        -- handleEventHook = docks,
         modMask = myModMask,
         terminal = myTerminal,
         startupHook = myStartupHook,
@@ -241,4 +242,4 @@ main = do
             ppExtras = [windowCount],
             ppOrder = \(ws : l : t : ex) -> [ws, l] ++ ex ++ [t]
         } >> updatePointer (0.5, 0.5) (0.5, 0.5) 
-} `additionalKeysP` myKeys
+} 
