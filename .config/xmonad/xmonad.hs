@@ -114,17 +114,15 @@ xmobarEscape = concatMap doubleLts
 
 myWorkspaces :: [String]
 myWorkspaces = clickable . (map xmobarEscape)
---                                                                                            
-    -- $ ["\xf269 ", "\xe61f ", "\xe795 ", "\xf121 ", "\xf419 ", "\xf308 ", "\xf74a ", "\xf7e8 ", "\xf827 "]
---                                                                                        
-    $ ["\xf121 ", "\xe795 ", "\xf269 ", "\xf419 ", "\xe61f ", "\xf308 ", "\xf74a ", "\xf7e8 ", "\xf827 "]
+--                                                                   yt       chat        spoty 
+    $ ["\xf121 ", "\xe795 ", "\xf269 ", "\xeafe", "\xe61f ", "\xf308 ", "\xf16a ", "\xf1d7 ", "\xf1bc "]
 
 --  $ ["www", "dev", "term", "ref", "git", "dock", "fs", "media", "misc"]
   where
     clickable l = ["<action=xdotool key super+" ++ show (i) ++ "> " ++ ws ++ "</action>" | (i, ws) <- zip [1 .. 9] l]
 
 myKeys :: [(String, X ())]
-myKeys = 
+myKeys =  
     [
     ------------------ Window configs ------------------
 
@@ -209,8 +207,8 @@ main = do
     xmobarLaptop <- spawnPipe "xmobar -x 0 ~/.config/xmobar/primary.hs"
     xmobarMonitor <- spawnPipe "xmobar -x 1 ~/.config/xmobar/secondary.hs"
     -- Xmonad
-    xmonad $ ewmh . docks def `additionalKeysP` myKeys 
-        {
+    -- xmonad $ ewmh . docks  def)
+    xmonad $ (ewmh.docks) def {
         manageHook = (isFullscreen --> doFullFloat) <+> manageDocks <+> insertPosition Below Newer,
         -- handleEventHook = docks,
         modMask = myModMask,
@@ -242,4 +240,4 @@ main = do
             ppExtras = [windowCount],
             ppOrder = \(ws : l : t : ex) -> [ws, l] ++ ex ++ [t]
         } >> updatePointer (0.5, 0.5) (0.5, 0.5) 
-} 
+} `additionalKeysP` myKeys 
